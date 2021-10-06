@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+  <main>
+    <div class="heading">
+      <h1 class="logo">calc</h1>
+      <div class="theme-container">
+        <h2>THEME</h2>
+        <div class="theme-selector">
+          <div class="theme-options">
+            <p class="option">1</p>
+            <p class="option">2</p>
+            <p class="option">3</p>
+          </div>
+          <div class="secondary-theme">
+            <input class="theme-input" type="range" min="0" max="2" value="0">
+            <input class="theme-input-2 hidden" type="range" min="0" max="2" value="2">
+          </div>    
+        </div>
+      </div>
+    </div>
+    <div class="output">
+      <div class="output-number">
+        <p class="output-text"></p>
+      </div>
+    </div>
+    <div class="keypad">
+      <div class="row">
+        <div class="key num val">
+          <p class="7">7</p>
+        </div>
+        <div class="key num val">
+          <p class="8">8</p>
+        </div>
+        <div class="key num val">
+          <p class="9">9</p>
+        </div>
+        <div class="key del">
+          <p>DEL</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="key num val">
+          <p class="4">4</p>
+        </div>
+        <div class="key num val">
+          <p class="5">5</p>
+        </div>
+        <div class="key num val">
+          <p class="6">6</p>
+        </div>
+        <div id="+" class="key num operator">
+          <p>+</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="key num val">
+          <p class="1">1</p>
+        </div>
+        <div class="key num val">
+          <p class="2">2</p>
+        </div>
+        <div class="key num val">
+          <p class="3">3</p>
+        </div>
+        <div id="-" class="key num operator">
+          <p>-</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="key num val">
+          <p class=".">.</p>
+        </div>
+        <div class="key num val">
+          <p class="0">0</p>
+        </div>
+        <div id="/" class="key num operator">
+          <p>/</p>
+        </div>
+        <div id="x" class="key num operator">
+          <p>x</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="key reset-key last">
+          <p>RESET</p>
+        </div>
+        <div class="key equal-key last">
+          <p>=</p>
+        </div>
+      </div>
+    </div>
+  
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
